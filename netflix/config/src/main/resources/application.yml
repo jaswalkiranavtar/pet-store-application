@@ -1,0 +1,27 @@
+---
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jaswalkiranavtar/pet-store-config-repo
+          
+security:
+  basic:
+    enabled: true
+  user:
+    name: config
+    password: config
+    
+encrypt:
+  key: my-very-secret-encryption-key
+
+server:
+  port: ${vcap.application.port:8888}
+#  ssl:
+#    key-password: password
+#    key-store-password: password
+#    key-store: classpath:server.jks
+
+info:
+  description: Petstore Cloud Config server

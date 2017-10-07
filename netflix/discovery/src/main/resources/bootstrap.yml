@@ -1,0 +1,21 @@
+---
+spring:
+  application:
+    name: discovery-server
+  cloud:
+    config:
+      uri: http://config:config@localhost:8888
+      
+---
+spring:
+  profiles: discovery1
+
+server:
+   port: ${vcap.application.port:8761}
+   
+---
+spring:
+  profiles: discovery2
+
+server:
+   port: ${vcap.application.port:8762}

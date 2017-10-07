@@ -1,0 +1,23 @@
+---
+spring:
+  application:
+    name: config-server
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+  instance:
+    hostname: localhost
+
+---
+spring:
+  profiles: cloud
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.discovery-service.credentials.uri}
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80

@@ -1,0 +1,11 @@
+---
+services:
+
+applications:
+- name: auth-server
+  domain: petstore
+  path: ./target/auth-server-0.1-SNAPSHOT.jar
+  buildpack: java-buildpack-v3_11_custom
+  memory: 256M
+  env:
+    spring_profiles_active: cloud

@@ -1,0 +1,11 @@
+---
+services:
+
+applications:
+- name: data-service
+  domain: petstore
+  path: ./target/data-service.jar
+  buildpack: java-buildpack-v3_11_custom
+  memory: 256M
+  env:
+    spring_profiles_active: cloud

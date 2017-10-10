@@ -1,0 +1,11 @@
+---
+services:
+
+applications:
+- name: ui
+  domain: petstore
+  path: ./target/ui.jar
+  buildpack: java-buildpack-v3_11_custom
+  memory: 256M
+  env:
+    spring_profiles_active: cloud

@@ -1,12 +1,13 @@
 ---
 services:
-- discovery-service-1
+
 applications:
-- name: "{{ bmx_app_name }}"
-  domain: "{{ bmx_domain }}"
-  path: discovery-server.jar
+- name: discovery-2
+  domain: petstore
+  path: ./discovery-server.jar
   buildpack: java-buildpack-v3_11_custom
-  memory: 512M
+  memory: 256M
   instances: 1
   env:
     spring_profiles_active: cloud,discovery2
+

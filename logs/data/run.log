@@ -1,6 +1,6 @@
-2017-10-10 06:33:38.757  INFO 7120 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8: startup date [Tue Oct 10 06:33:38 EDT 2017]; root of context hierarchy
-2017-10-10 06:33:39.328  INFO 7120 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-10-10 06:33:39.360  INFO 7120 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b20ac12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-10 06:53:09.542  INFO 1284 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8: startup date [Tue Oct 10 06:53:09 EDT 2017]; root of context hierarchy
+2017-10-10 06:53:10.004  INFO 1284 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-10 06:53:10.044  INFO 1284 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$938cf204] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -10,132 +10,80 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.0.RELEASE)
 
-2017-10-10 06:33:39.850  INFO 7120 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
-2017-10-10 06:33:43.525  INFO 7120 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=data-service, profiles=[default], label=master, version=7bbad06374b16780b6110fe3a90d0f9e13cad88d, state=null
-2017-10-10 06:33:43.527  INFO 7120 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/jaswalkiranavtar/pet-store-config-repo/data-service.yml']]]
-2017-10-10 06:33:43.568  INFO 7120 --- [           main] com.gaurav.petstore.DataApplication      : No active profile set, falling back to default profiles: default
-2017-10-10 06:33:43.613  INFO 7120 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dc24521: startup date [Tue Oct 10 06:33:43 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8
-2017-10-10 06:33:45.743  INFO 7120 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'petStoreOAuthFilter' with a different definition: replacing [Generic bean: class [com.gaurav.petstore.auth.filter.PetStoreOAuthFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Development/pet-store-application/app/services/data/target/data-service.jar!/BOOT-INF/lib/security-0.1-SNAPSHOT.jar!/com/gaurav/petstore/auth/filter/PetStoreOAuthFilter.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=petStoreOAuthFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gaurav/petstore/config/SecurityConfig.class]]
-2017-10-10 06:33:45.743  INFO 7120 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'petStoreTokenFilter' with a different definition: replacing [Generic bean: class [com.gaurav.petstore.auth.filter.PetStoreTokenFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Development/pet-store-application/app/services/data/target/data-service.jar!/BOOT-INF/lib/security-0.1-SNAPSHOT.jar!/com/gaurav/petstore/auth/filter/PetStoreTokenFilter.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=petStoreTokenFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gaurav/petstore/config/SecurityConfig.class]]
-2017-10-10 06:33:46.220  WARN 7120 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2017-10-10 06:33:46.491  INFO 7120 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e7dd02d2-342d-30ce-ba9c-de2f922c101e
-2017-10-10 06:33:46.508  INFO 7120 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-10-10 06:33:46.695  INFO 7120 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b20ac12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-10-10 06:33:47.706  INFO 7120 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 10001 (http)
-2017-10-10 06:33:47.733  INFO 7120 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2017-10-10 06:33:47.735  INFO 7120 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
-2017-10-10 06:33:47.974  INFO 7120 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2017-10-10 06:33:47.974  INFO 7120 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4361 ms
-2017-10-10 06:33:49.275  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-10-10 06:33:49.276  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-10-10 06:33:49.276  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-10-10 06:33:49.276  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2017-10-10 06:33:49.279  INFO 7120 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
-2017-10-10 06:33:49.279  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'petStoreOAuthFilter' to: [/*]
-2017-10-10 06:33:49.280  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'petStoreTokenFilter' to: [/*]
-2017-10-10 06:33:49.280  INFO 7120 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-10-10 06:33:49.570  INFO 7120 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+2017-10-10 06:53:10.542  INFO 1284 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2017-10-10 06:53:11.050  INFO 1284 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=data-service, profiles=[default], label=master, version=d0712d2f8583ab57756d873995f9cdcb56b0b03d, state=null
+2017-10-10 06:53:11.050  INFO 1284 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/jaswalkiranavtar/pet-store-config-repo/data-service.yml']]]
+2017-10-10 06:53:11.056  INFO 1284 --- [           main] com.gaurav.petstore.DataApplication      : No active profile set, falling back to default profiles: default
+2017-10-10 06:53:11.076  INFO 1284 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10bdf5e5: startup date [Tue Oct 10 06:53:11 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8
+2017-10-10 06:53:11.822  INFO 1284 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'petStoreOAuthFilter' with a different definition: replacing [Generic bean: class [com.gaurav.petstore.auth.filter.PetStoreOAuthFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Development/pet-store-application/app/services/data/target/data-service.jar!/BOOT-INF/lib/security-0.1-SNAPSHOT.jar!/com/gaurav/petstore/auth/filter/PetStoreOAuthFilter.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=petStoreOAuthFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gaurav/petstore/config/SecurityConfig.class]]
+2017-10-10 06:53:11.823  INFO 1284 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'petStoreTokenFilter' with a different definition: replacing [Generic bean: class [com.gaurav.petstore.auth.filter.PetStoreTokenFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Development/pet-store-application/app/services/data/target/data-service.jar!/BOOT-INF/lib/security-0.1-SNAPSHOT.jar!/com/gaurav/petstore/auth/filter/PetStoreTokenFilter.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=petStoreTokenFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gaurav/petstore/config/SecurityConfig.class]]
+2017-10-10 06:53:12.087  WARN 1284 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-10-10 06:53:12.218  INFO 1284 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e7dd02d2-342d-30ce-ba9c-de2f922c101e
+2017-10-10 06:53:12.228  INFO 1284 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-10 06:53:12.323  INFO 1284 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$938cf204] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-10 06:53:12.747  INFO 1284 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 10001 (http)
+2017-10-10 06:53:12.762  INFO 1284 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-10 06:53:12.764  INFO 1284 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-10-10 06:53:12.898  INFO 1284 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-10 06:53:12.899  INFO 1284 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1824 ms
+2017-10-10 06:53:13.907  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-10 06:53:13.908  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-10 06:53:13.908  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-10 06:53:13.908  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-10 06:53:13.910  INFO 1284 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-10-10 06:53:13.910  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'petStoreOAuthFilter' to: [/*]
+2017-10-10 06:53:13.910  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'petStoreTokenFilter' to: [/*]
+2017-10-10 06:53:13.910  INFO 1284 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-10 06:53:14.244  INFO 1284 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
 
-Using default security password: a86d9ec7-83f4-4c7e-9d76-0e85c3a6e2fa
+Using default security password: a02ab321-1d03-4396-9fc7-08d4da1c10bf
 
-2017-10-10 06:33:50.097  INFO 7120 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ff4931d, org.springframework.security.web.context.SecurityContextPersistenceFilter@74e52ef6, org.springframework.security.web.header.HeaderWriterFilter@1fa121e2, org.springframework.security.web.csrf.CsrfFilter@6f03482, org.springframework.security.web.authentication.logout.LogoutFilter@7c6908d7, com.gaurav.petstore.auth.filter.PetStoreOAuthFilter@1d33ba18, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@710f4dc7, com.gaurav.petstore.auth.filter.PetStoreTokenFilter@ee94e9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a677343, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@489115ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65e98b1c, org.springframework.security.web.session.SessionManagementFilter@4116aac9, org.springframework.security.web.access.ExceptionTranslationFilter@179ece50, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a5c8d3f]
-2017-10-10 06:33:51.012  INFO 7120 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dc24521: startup date [Tue Oct 10 06:33:43 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8
-2017-10-10 06:33:51.411  INFO 7120 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/data],methods=[GET]}" onto public com.gaurav.petstore.pojo.PetStoreData com.gaurav.petstore.controller.Controller.data()
-2017-10-10 06:33:51.418  INFO 7120 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-10-10 06:33:51.419  INFO 7120 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-10-10 06:33:51.511  INFO 7120 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2017-10-10 06:33:51.570  INFO 7120 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-10 06:33:51.570  INFO 7120 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-10 06:33:51.715  INFO 7120 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-10-10 06:33:53.582  WARN 7120 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2017-10-10 06:33:53.583  INFO 7120 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2017-10-10 06:33:53.599  WARN 7120 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2017-10-10 06:33:53.599  INFO 7120 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2017-10-10 06:33:53.722  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2017-10-10 06:33:53.747  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2017-10-10 06:33:53.748  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
-2017-10-10 06:33:53.759  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
-2017-10-10 06:33:53.764  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
-2017-10-10 06:33:53.794  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
-2017-10-10 06:33:53.823  INFO 7120 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=dc24521,type=ConfigurationPropertiesRebinder]
-2017-10-10 06:33:54.147  INFO 7120 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2017-10-10 06:33:54.164  INFO 7120 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2017-10-10 06:33:54.608  INFO 7120 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2017-10-10 06:33:54.616  INFO 7120 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2017-10-10 06:33:54.952  INFO 7120 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2017-10-10 06:33:54.953  INFO 7120 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2017-10-10 06:33:56.112  INFO 7120 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2017-10-10 06:33:56.204  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2017-10-10 06:33:56.416  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2017-10-10 06:33:56.418  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2017-10-10 06:33:56.420  INFO 7120 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2017-10-10 06:33:56.423  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1507631636423 with initial instances count: 2
-2017-10-10 06:33:56.464  INFO 7120 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application data-service with eureka with status UP
-2017-10-10 06:33:56.466  INFO 7120 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1507631636465, current=UP, previous=STARTING]
-2017-10-10 06:33:56.469  INFO 7120 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001: registering service...
-2017-10-10 06:33:56.550  INFO 7120 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001 - registration status: 204
-2017-10-10 06:33:56.598  INFO 7120 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 10001 (http)
-2017-10-10 06:33:56.599  INFO 7120 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 10001
-2017-10-10 06:33:56.605  INFO 7120 --- [           main] com.gaurav.petstore.DataApplication      : Started DataApplication in 19.529 seconds (JVM running for 20.301)
-2017-10-10 06:38:56.209  INFO 7120 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2017-10-10 06:40:27.554 ERROR 7120 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
-
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.12.jar!/:1.4.12]
-	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.12.jar!/:1.4.12]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_101]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_101]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_101]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_101]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_101]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_101]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_101]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_101]
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
-	... 26 common frames omitted
-
-2017-10-10 06:40:27.554 ERROR 7120 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2017-10-10 06:53:14.694  INFO 1284 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65e98b1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ed3ccb2, org.springframework.security.web.header.HeaderWriterFilter@7eac9008, org.springframework.security.web.csrf.CsrfFilter@9d5509a, org.springframework.security.web.authentication.logout.LogoutFilter@3c9754d8, com.gaurav.petstore.auth.filter.PetStoreOAuthFilter@749a1f67, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ff4931d, com.gaurav.petstore.auth.filter.PetStoreTokenFilter@3e9d9edd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15de0b3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3857f613, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61322f9d, org.springframework.security.web.session.SessionManagementFilter@62ddbd7e, org.springframework.security.web.access.ExceptionTranslationFilter@3b0090a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@752325ad]
+2017-10-10 06:53:15.240  INFO 1284 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10bdf5e5: startup date [Tue Oct 10 06:53:11 EDT 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@368102c8
+2017-10-10 06:53:15.703  INFO 1284 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/data],methods=[GET]}" onto public com.gaurav.petstore.pojo.PetStoreData com.gaurav.petstore.controller.Controller.data()
+2017-10-10 06:53:15.726  INFO 1284 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-10 06:53:15.729  INFO 1284 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-10 06:53:15.770  INFO 1284 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-10-10 06:53:15.790  INFO 1284 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 06:53:15.790  INFO 1284 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 06:53:15.896  INFO 1284 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-10 06:53:17.819  WARN 1284 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-10-10 06:53:17.819  INFO 1284 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-10 06:53:17.833  WARN 1284 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-10-10 06:53:17.833  INFO 1284 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-10 06:53:17.986  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-10 06:53:17.998  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-10-10 06:53:17.999  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-10-10 06:53:18.000  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-10-10 06:53:18.004  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-10-10 06:53:18.023  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-10-10 06:53:18.041  INFO 1284 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=10bdf5e5,type=ConfigurationPropertiesRebinder]
+2017-10-10 06:53:18.313  INFO 1284 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-10-10 06:53:18.333  INFO 1284 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-10-10 06:53:18.950  INFO 1284 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-10-10 06:53:18.953  INFO 1284 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-10-10 06:53:19.331  INFO 1284 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-10-10 06:53:19.331  INFO 1284 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-10-10 06:53:20.089  INFO 1284 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-10-10 06:53:20.307  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-10-10 06:53:20.621  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-10-10 06:53:20.623  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-10-10 06:53:20.627  INFO 1284 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-10-10 06:53:20.632  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1507632800631 with initial instances count: 2
+2017-10-10 06:53:20.681  INFO 1284 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application data-service with eureka with status UP
+2017-10-10 06:53:20.683  INFO 1284 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1507632800683, current=UP, previous=STARTING]
+2017-10-10 06:53:20.686  INFO 1284 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001: registering service...
+2017-10-10 06:53:20.773  INFO 1284 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001 - registration status: 204
+2017-10-10 06:53:20.811  INFO 1284 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 10001 (http)
+2017-10-10 06:53:20.813  INFO 1284 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 10001
+2017-10-10 06:53:20.817  INFO 1284 --- [           main] com.gaurav.petstore.DataApplication      : Started DataApplication in 12.402 seconds (JVM running for 12.982)
+2017-10-10 06:54:21.683 ERROR 1284 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
@@ -189,9 +137,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
 	... 29 common frames omitted
 
-2017-10-10 06:40:27.554  WARN 7120 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
-2017-10-10 06:40:27.554  WARN 7120 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
-2017-10-10 06:40:28.567 ERROR 7120 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2017-10-10 06:54:21.683  WARN 1284 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:21.691 ERROR 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
@@ -206,8 +153,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.12.jar!/:1.4.12]
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.12.jar!/:1.4.12]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.4.12.jar!/:1.4.12]
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.12.jar!/:1.4.12]
@@ -241,10 +187,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
-	... 27 common frames omitted
+	... 26 common frames omitted
 
-2017-10-10 06:40:28.569  WARN 7120 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
-2017-10-10 06:40:28.570 ERROR 7120 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+2017-10-10 06:54:21.691  WARN 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:22.696 ERROR 1284 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
 
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
@@ -299,6 +245,200 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
 	... 30 common frames omitted
 
-2017-10-10 06:40:28.571  WARN 7120 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
-2017-10-10 06:40:28.574  INFO 7120 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #2
-2017-10-10 06:40:28.575  INFO 7120 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #2
+2017-10-10 06:54:22.697  WARN 1284 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:22.703 ERROR 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.12.jar!/:1.4.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_101]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_101]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_101]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_101]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_101]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2017-10-10 06:54:22.704  WARN 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:23.711 ERROR 1284 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.12.jar!/:1.4.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_101]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_101]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_101]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_101]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_101]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 30 common frames omitted
+
+2017-10-10 06:54:23.713  WARN 1284 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:23.714 ERROR 1284 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001 - was unable to refresh its cache! status = Retry limit reached; giving up on completing the request
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:138) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435) [eureka-client-1.4.12.jar!/:1.4.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+
+2017-10-10 06:54:23.718 ERROR 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) [eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.12.jar!/:1.4.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_101]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_101]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_101]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_101]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_101]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_101]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient-4.5.2.jar!/:4.5.2]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2017-10-10 06:54:23.719  WARN 1284 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-10-10 06:54:23.720 ERROR 1284 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DATA-SERVICE/DESKTOP-AB80SJP:data-service:10001 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:138) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832) ~[eureka-client-1.4.12.jar!/:1.4.12]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396) [eureka-client-1.4.12.jar!/:1.4.12]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_101]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+

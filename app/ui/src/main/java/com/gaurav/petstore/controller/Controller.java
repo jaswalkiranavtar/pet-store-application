@@ -15,4 +15,10 @@ public class Controller {
     	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		return user;
 	}
+	
+	@GetMapping("/admin")
+	public Principal admin(Principal user) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		return user;
+	}
 }

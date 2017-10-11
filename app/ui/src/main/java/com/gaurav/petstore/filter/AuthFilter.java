@@ -32,7 +32,7 @@ public class AuthFilter extends ZuulFilter {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (auth instanceof PetStoreAuthenticationToken) {
             PetStoreAuthenticationToken token = (PetStoreAuthenticationToken) auth;
-            RequestContext.getCurrentContext().addZuulRequestHeader("Authorization", "Bearer " + token.getAccessToken());
+            RequestContext.getCurrentContext().addZuulRequestHeader("Authorization", token.getAccessToken());
             log.debug("Adding authentication token to request");
         }
 

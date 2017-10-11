@@ -10,8 +10,8 @@
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 3.909 s
-[[1;34mINFO[m] Finished at: 2017-10-10T06:52:26-04:00
+[[1;34mINFO[m] Total time: 2.491 s
+[[1;34mINFO[m] Finished at: 2017-10-11T01:08:10-04:00
 [[1;34mINFO[m] Final Memory: 21M/224M
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-clean-plugin:2.6.1:clean[m [1m(default-clean)[m on project [36mdiscovery-server[m: [1;31mFailed to clean project: Failed to delete C:\Development\pet-store-application\netflix\discovery\target\discovery-server.jar[m -> [1m[Help 1][m

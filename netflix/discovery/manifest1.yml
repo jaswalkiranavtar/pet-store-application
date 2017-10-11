@@ -1,11 +1,10 @@
 ---
-services:
-
 applications:
 - name: discovery-1
-  domain: petstore
-  path: ./discovery-server.jar
-  buildpack: java-buildpack-v3_11_custom
+  host: petstore-discovery-1
+  domain: mybluemix.net
+  path: ./target/discovery-server.jar
+  buildpack: liberty-for-java
   memory: 256M
   instances: 1
   env:

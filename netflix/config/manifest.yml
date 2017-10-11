@@ -1,11 +1,10 @@
 ---
-services:
-
 applications:
 - name: config-server
-  domain: petstore
+  host: petstore-config-server
+  domain: mybluemix.net
   path: ./target/config-server.jar
-  buildpack: java-buildpack-v3_11_custom
+  buildpack: liberty-for-java
   memory: 256M
   env:
     spring_profiles_active: cloud

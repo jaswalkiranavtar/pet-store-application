@@ -1,23 +1,44 @@
 package com.gaurav.petstore.controller;
 
-import java.security.Principal;
-
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-//import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gaurav.petstore.pojo.PetStoreData;
+import com.gaurav.petstore.pojo.Pet;
+import com.gaurav.petstore.repository.PetRepository;
 
 @RestController
 public class Controller {
 	
-//	@PreAuthorize("#oauth2.hasScope('read')")
-    @GetMapping("/data")
-    public PetStoreData data() {
-        return new PetStoreData(1, "Gaurav");
-    }
+	@Autowired
+	PetRepository repository;
+	
+//    @GetMapping("/data")
+//    public Pet data() {
+//        return new Pet(1, "Gaurav");
+//    }
+//    
+//    @GetMapping("/list-all-pets")
+//    public Iterable<Pet> listAll() {
+//    	return repository.findAll();
+//    }
+//    
+//    @PostMapping("/create-a-pet")
+//    public Pet createOne(@RequestBody Pet pet) {
+//    	return repository.save(pet);
+//    }
+//    
+//    @DeleteMapping("/delete-a-pet")
+//    public void deleteOne(@RequestBody Pet pet) {
+//    	repository.delete(pet.getId());
+//    }
+//    
+//    @GetMapping("/find-a-pet")
+//    public Pet findOne(@RequestBody Pet pet) {
+//    	return repository.findOne(pet.getId());
+//    }
     
 }

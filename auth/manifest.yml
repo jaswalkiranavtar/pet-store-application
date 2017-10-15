@@ -1,11 +1,13 @@
 ---
 services:
-
+- config-service
+- discovery-service
 applications:
 - name: auth-server
-  domain: petstore
+  host: petstore-auth-server
+  domain: mybluemix.net
   path: ./target/auth-server-0.1-SNAPSHOT.jar
-  buildpack: java-buildpack-v3_11_custom
-  memory: 256M
+  buildpack: liberty-for-java
+  memory: 300M
   env:
     spring_profiles_active: cloud

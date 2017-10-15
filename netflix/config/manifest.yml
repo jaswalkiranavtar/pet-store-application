@@ -1,4 +1,6 @@
 ---
+services:
+- discovery-service
 applications:
 - name: config-server
   host: petstore-config-server

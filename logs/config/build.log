@@ -10,8 +10,8 @@
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 2.525 s
-[[1;34mINFO[m] Finished at: 2017-10-11T00:44:13-04:00
+[[1;34mINFO[m] Total time: 2.975 s
+[[1;34mINFO[m] Finished at: 2017-10-14T19:41:13-04:00
 [[1;34mINFO[m] Final Memory: 21M/217M
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-clean-plugin:2.6.1:clean[m [1m(default-clean)[m on project [36mconfig-server[m: [1;31mFailed to clean project: Failed to delete C:\Development\pet-store-application\netflix\config\target\config-server.jar[m -> [1m[Help 1][m

@@ -2,9 +2,20 @@
 spring:
   application:
     name: discovery-server
-  cloud:
-    config:
-      uri: http://config:config@localhost:8888
+ 
+info:
+  description: Petstore Eureka Service Discovery
+eureka:
+  server:
+    enableSelfPreservation: false
+    
+---
+spring:
+  profiles: cloud
+  
+eureka:
+  instance:
+    nonSecurePort: 80
       
 ---
 spring:

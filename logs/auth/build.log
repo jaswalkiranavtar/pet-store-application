@@ -10,9 +10,9 @@
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time: 2.505 s
-[[1;34mINFO[m] Finished at: 2017-10-11T00:25:48-04:00
-[[1;34mINFO[m] Final Memory: 21M/224M
+[[1;34mINFO[m] Total time: 2.471 s
+[[1;34mINFO[m] Finished at: 2017-10-14T19:41:19-04:00
+[[1;34mINFO[m] Final Memory: 21M/217M
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-clean-plugin:2.6.1:clean[m [1m(default-clean)[m on project [36mauth-server[m: [1;31mFailed to clean project: Failed to delete C:\Development\pet-store-application\auth\target\auth-server-0.1-SNAPSHOT.jar[m -> [1m[Help 1][m
 [[1;31mERROR[m] 

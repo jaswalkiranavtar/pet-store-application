@@ -56,7 +56,10 @@ public class PetStoreAuthenticationManager implements AuthenticationManager{
 				e.printStackTrace();
 			}
 			List<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
-			authorities.add(new SimpleGrantedAuthority(((List)jws.getBody().get("authorities")).get(0).toString()));
+			List<String> authorityNames = (List)jws.getBody().get("authorities");
+			for(String authorityName: authorityNames) {
+				authorities.add(new SimpleGrantedAuthority(authorityName));
+			}
 			token = new PetStoreAuthenticationToken(authentication.getPrincipal(), "", authorities);
 			token.setAccessToken(((PetStoreAuthenticationToken) authentication).getAccessToken());
 			

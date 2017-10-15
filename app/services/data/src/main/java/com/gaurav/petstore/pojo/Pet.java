@@ -7,11 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//@Entity
+@Entity
 //@Table(name = "pet")
 public class Pet {
 
-//	@Id
+	@Id
 //    @Column(name = "id")
 //    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

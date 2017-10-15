@@ -1,11 +1,14 @@
 ---
 services:
-
+- config-service
+- discovery-service
+- sso-service
 applications:
 - name: data-service
-  domain: petstore
-  path: ./target/data-service.jar
-  buildpack: java-buildpack-v3_11_custom
-  memory: 256M
+  host: petstore-data-service
+  domain: mybluemix.net
+  path: ./target/data-service-0.1-SNAPSHOT.jar
+  buildpack: liberty-for-java
+  memory: 350M
   env:
     spring_profiles_active: cloud

@@ -1,7 +1,5 @@
 package com.gaurav.petstore.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,7 +7,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
-import com.gaurav.petstore.auth.client.OAuth2ClientProperties;
 import com.gaurav.petstore.auth.filter.PetStoreOAuthFilter;
 import com.gaurav.petstore.auth.filter.PetStoreTokenFilter;
 import com.gaurav.petstore.auth.manager.PetStoreAuthenticationManager;
@@ -25,8 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
                 .antMatchers("/", "/home").permitAll()
-                .antMatchers("/user").hasAuthority("ROLE_USER")
-                .antMatchers("/admin","/user").hasAuthority("ROLE_ADMIN")
+                .antMatchers("/api/v1/data/list-all-pets", "/list-all-pets", "/user").hasAnyRole("ADMIN","USER")
+                .antMatchers("/api/v1/data/delete-a-pet/**", "/api/v1/data/create-a-pet", "/delete-a-pet/**", "/create-a-pet", "/admin", "/data").hasAnyRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
             .formLogin()

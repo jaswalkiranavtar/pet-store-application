@@ -39,13 +39,16 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
+
+
+			<dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-releasetrain</artifactId>
                 <version>Hopper-SR4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            
 			<dependency>
 				<groupId>com.gaurav.petstore</groupId>
 				<artifactId>security</artifactId>
@@ -94,17 +97,14 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <name>Maven Central</name>
-            <url>http://repo1.maven.org/maven2</url>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
-            <id>central</id>
-            <name>Maven Central</name>
-            <url>http://repo1.maven.org/maven2</url>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
 

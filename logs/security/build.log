@@ -9,12 +9,14 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ security ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
+[INFO] Copying 2 resources
 [INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ security ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 10 source files to C:\Development\pet-store-application\security\target\classes
+[WARNING] /C:/Development/pet-store-application/security/src/main/java/com/gaurav/petstore/auth/manager/PetStoreAuthenticationManager.java: C:\Development\pet-store-application\security\src\main\java\com\gaurav\petstore\auth\manager\PetStoreAuthenticationManager.java uses unchecked or unsafe operations.
+[WARNING] /C:/Development/pet-store-application/security/src/main/java/com/gaurav/petstore/auth/manager/PetStoreAuthenticationManager.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ security ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -35,7 +37,7 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.072 s
-[INFO] Finished at: 2017-10-11T00:25:31-04:00
-[INFO] Final Memory: 29M/211M
+[INFO] Total time: 2.836 s
+[INFO] Finished at: 2017-10-14T04:10:31-04:00
+[INFO] Final Memory: 30M/213M
 [INFO] ------------------------------------------------------------------------

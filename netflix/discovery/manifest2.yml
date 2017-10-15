@@ -1,11 +1,13 @@
 ---
+services:
+- discovery-service-1
 applications:
 - name: discovery-2
-  host: petstore-discovery-1
+  host: petstore-discovery-2
   domain: mybluemix.net
   path: ./target/discovery-server.jar
   buildpack: liberty-for-java
-  memory: 256M
+  memory: 384M
   instances: 1
   env:
     spring_profiles_active: cloud,discovery2

@@ -21,3 +21,7 @@ eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
+    nonSecurePortEnabled: true
+    homePageUrl: http://${vcap.application.uris[0]}/
+    hostInfo: http://${vcap.application.uris[0]}/info
+    healthCheckUrl: http://${vcap.application.uris[0]}/health

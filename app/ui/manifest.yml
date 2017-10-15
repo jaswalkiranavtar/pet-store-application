@@ -1,11 +1,14 @@
 ---
 services:
-
+- config-service
+- discovery-service
+- sso-service
 applications:
 - name: ui
-  domain: petstore
+  host: petstore-ui
+  domain: mybluemix.net
   path: ./target/ui.jar
-  buildpack: java-buildpack-v3_11_custom
-  memory: 256M
+  buildpack: liberty-for-java
+  memory: 350M
   env:
     spring_profiles_active: cloud

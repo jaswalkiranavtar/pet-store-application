@@ -1,0 +1,5 @@
+security.oauth2.client.clientId: ${vcap.services.sso-service.credentials.client-id}
+security.oauth2.client.clientSecret: ${vcap.services.sso-service.credentials.client-secret}
+security.oauth2.client.accessTokenUri: http://${vcap.services.sso-service.credentials.auth-server-uri}/uaa/oauth/token
+security.oauth2.client.userAuthorizationUri: http://${vcap.services.sso-service.credentials.auth-server-uri}/uaa/oauth/authorize
+security.oauth2.client.tokenInfoUri: http://${vcap.services.sso-service.credentials.auth-server-uri}/uaa/oauth/check_token

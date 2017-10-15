@@ -25,13 +25,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter  {
         	.inMemoryAuthentication()
         	.withUser(admin.getName())
         	.password(admin.getPassword())
-        	.roles(admin.getRole());
+        	.roles(admin.getRole(), "ACTUATOR");
         
         auth
         	.inMemoryAuthentication()
         	.withUser(user.getName())
         	.password(user.getPassword())
         	.roles(user.getRole());
+        
     }
 
 }

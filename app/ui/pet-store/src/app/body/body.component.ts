@@ -4,6 +4,7 @@ import {PetstoreService} from '../petstore.service';
 import { Observable }     from 'rxjs/Observable';
 
 import { Pet } from '../pet';
+import { User } from '../user';
 
 @Component({
   selector: 'app-body',
@@ -12,7 +13,7 @@ import { Pet } from '../pet';
 })
 export class BodyComponent implements OnInit {
 
-  @Input() authorities: string[];  
+  @Input() user: User;  
   @Input() pets: Observable<Pet[]>;
     
   filterString: string;

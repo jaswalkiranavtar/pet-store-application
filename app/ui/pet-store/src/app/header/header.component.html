@@ -1,15 +1,19 @@
 <mat-toolbar color="primary">
   <span>
-  	<button mat-fab color="accent" (click)="openDialog()">Add</button>
+  	<div *ngIf="user.authorities.includes('ROLE_ADMIN')">
+  	  <button mat-fab color="accent" (click)="openDialog()">Add</button>
+  	</div>
   </span>
   <span class="example-spacer"></span>
   
-  <span>Hey {{username}}! Welcome to Petstore</span>
+  <div *ngIf="user">
+	  <span>Hey {{user.name}}! Welcome to Petstore</span>
+  </div>
+
   <span class="example-spacer"></span>
-  
   <span>
-    <mat-form-field color="primary" class="example-full-width">
-     <input matInput placeholder="Search" (keyup)="triggerSearch($event)">
+ 	<mat-form-field color="primary" class="example-full-width">
+      <input matInput placeholder="Search" (keyup)="triggerSearch($event)">
     </mat-form-field>
-  </span>
+ </span>
 </mat-toolbar>

@@ -3,12 +3,12 @@
 		<tr>
 			<th>Id</th>
 			<th>Name</th>
-			<th>Delete</th>
+			<th *ngIf="user.authorities.includes('ROLE_ADMIN')">Delete</th>
 		</tr>
 		<tr *ngFor="let pet of pets | async">
 			<td>{{pet.id}}</td>
 			<td>{{pet.name}}</td>
-			<td><a href="" (click)="remove(pet, $event)">Delete</a></td>
+			<td *ngIf="user.authorities.includes('ROLE_ADMIN')"><a href="" (click)="remove(pet, $event)">Delete</a></td>
 		</tr>
 		
 	</table>

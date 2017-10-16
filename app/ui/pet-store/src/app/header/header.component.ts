@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material';
 import { MatDialogRef } from '@angular/material';
 
 import {PetstoreService} from '../petstore.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,7 @@ import {PetstoreService} from '../petstore.service';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() username: string;  
+  @Input() user: User;  
     
   constructor(public dialog: MatDialog, private petstoreService: PetstoreService) { }
 

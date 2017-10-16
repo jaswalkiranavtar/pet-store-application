@@ -1,1 +1,4 @@
-<app-test></app-test>
+<div *ngIf="user">
+	<app-header [username]="user.name"></app-header>
+	<app-body [authorities]="user.authorities" [pets]="pets"></app-body>
+</div>

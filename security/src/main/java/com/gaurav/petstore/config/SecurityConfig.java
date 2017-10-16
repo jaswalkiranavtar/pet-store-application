@@ -2,6 +2,7 @@ package com.gaurav.petstore.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter;
@@ -23,7 +24,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
                 .antMatchers("/", "/home").permitAll()
                 .antMatchers("/api/v1/data/list-all-pets", "/list-all-pets", "/user").hasAnyRole("ADMIN","USER")
-                .antMatchers("/api/v1/data/delete-a-pet/**", "/api/v1/data/create-a-pet", "/delete-a-pet/**", "/create-a-pet", "/admin", "/data").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/api/v1/data/create-a-pet", "/create-a-pet").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/api/v1/data/delete-a-pet", "/delete-a-pet").hasAnyRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
@@ -34,6 +36,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .addFilterBefore(petStoreTokenFilter(), BasicAuthenticationFilter.class)
             .logout()
                 .permitAll();
+        
+        http.csrf().disable();
     }
 
     @Bean

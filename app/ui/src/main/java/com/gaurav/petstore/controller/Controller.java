@@ -18,10 +18,4 @@ public class Controller {
 		PetStoreAuthenticationToken token = (PetStoreAuthenticationToken)user;
 		return new User(token.getPrincipal().toString(), token.getAuthorities().toString());
     }
-	
-//	@GetMapping("/admin")
-//	public Principal admin(Principal user) {
-//    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//		return user;
-//	}
 }

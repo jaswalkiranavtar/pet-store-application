@@ -1,0 +1,15 @@
+<div *ngIf="pets">
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Delete</th>
+		</tr>
+		<tr *ngFor="let pet of pets | async">
+			<td>{{pet.id}}</td>
+			<td>{{pet.name}}</td>
+			<td><a href="" (click)="remove(pet, $event)">Delete</a></td>
+		</tr>
+		
+	</table>
+</div>

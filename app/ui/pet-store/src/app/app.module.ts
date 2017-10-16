@@ -1,21 +1,50 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material';
+import { HttpModule }    from '@angular/http';
+import { FormsModule }   from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+
+import { PetstoreService } from './petstore.service';
+import { HeaderComponent } from './header/header.component';
+import { BodyComponent } from './body/body.component';
+  
+import {MatButtonModule} from '@angular/material';
+import {MatDialogModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
+import {MatIconModule} from '@angular/material';
+import {NewPetExampleDialog} from './header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    HeaderComponent,
+    BodyComponent,
+    NewPetExampleDialog
   ],
   imports: [
     BrowserModule,
-    MatToolbarModule
+    HttpModule,
+    FormsModule,
+    HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatToolbarModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  entryComponents: [
+    NewPetExampleDialog
+  ],
+  providers: [PetstoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

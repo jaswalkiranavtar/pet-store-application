@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>
+  	<button mat-fab color="accent" (click)="openDialog()">Add</button>
+  </span>
+  <span class="example-spacer"></span>
+  
+  <span>Hey {{username}}! Welcome to Petstore</span>
+  <span class="example-spacer"></span>
+  
+  <span>
+    <mat-form-field color="primary" class="example-full-width">
+     <input matInput placeholder="Search" (keyup)="triggerSearch($event)">
+    </mat-form-field>
+  </span>
+</mat-toolbar>

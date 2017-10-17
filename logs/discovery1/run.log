@@ -2773,3 +2773,17 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2017-10-16 23:24:27.222  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2017-10-16 23:25:27.222  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2017-10-16 23:26:27.223  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2017-10-16 23:27:27.224  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:27:51.790  INFO 9100 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:28:27.224  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:29:27.225  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:30:27.225  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:31:27.226  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:32:27.226  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:32:51.791  INFO 9100 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:33:27.227  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:34:07.179  INFO 9100 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-INTERFACE/DESKTOP-AB80SJP:user-interface:8080 with status UP (replication=false)
+2017-10-16 23:34:27.227  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:35:27.228  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:36:27.229  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:37:27.229  INFO 9100 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

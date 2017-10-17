@@ -635,3 +635,5 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2017-10-16 23:13:39.418  INFO 9796 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 23:18:39.419  INFO 9796 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 23:23:39.420  INFO 9796 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:28:39.421  INFO 9796 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:33:39.424  INFO 9796 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

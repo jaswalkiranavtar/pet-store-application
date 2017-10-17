@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="accent">
   <span>
   	<div *ngIf="user.authorities.includes('ROLE_ADMIN')">
-  	  <button mat-fab color="accent" (click)="openDialog()">Add</button>
+  	  <button mat-raised-button color="primary" (click)="openDialog()">Add</button>
   	</div>
   </span>
   <span class="example-spacer"></span>

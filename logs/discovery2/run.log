@@ -2096,3 +2096,18 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2017-10-16 23:23:41.220  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
 2017-10-16 23:24:41.220  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2017-10-16 23:25:41.221  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:26:41.221  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:27:41.221  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:28:06.062  INFO 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:28:41.222  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:29:41.222  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:30:41.223  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:31:41.223  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:32:41.224  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:33:06.063  INFO 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:33:41.224  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:34:07.687  INFO 9148 --- [nio-8762-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-INTERFACE/DESKTOP-AB80SJP:user-interface:8080 with status UP (replication=true)
+2017-10-16 23:34:41.225  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2017-10-16 23:35:41.226  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:36:41.226  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2017-10-16 23:37:41.227  INFO 9148 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

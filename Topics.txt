@@ -1,0 +1,44 @@
+1. A custom security module used to secure all apps
+	- Every app that needs security should have petstore security in its class path and @EnablePetstoreSecurity is used in the SpringApplication.
+	- Every app that uses this module becomes a secure resource server and any unauthenticated request to the app is redirected to /login page which is inside this module.
+	- to authenticate with auth srver
+
+2. Config Server (Externalizing configuration). We have mix and match of config server and user defined services for demo.
+	- Secured by basic auth
+	- Config server has git uri in its yml. (https://github.com/jaswalkiranavtar/pet-store-config-repo)
+	- Each component has the uri of config server in its yml, which comes from config-service cups.
+	- Config server gets refreshed when the property is updated, however to refresh the property in app, use RefreshBean and hit /env actuator endpoint.
+	
+3. 2 Discovery servers: 
+	- Each App registers to the cluster and 2 instances registers to each other. 
+	- Any component should be bound to CUPS discovery-service to register itself with eureka.
+
+4. Auth Server:
+	- Has properties coming from both cups and config server. 
+	- Has /oauth/authorize and /oauth/token endpoints. 
+	- Accounts and creds are in property files.
+	- Symmetric key is used to sign jwt token.
+	- Has clientId, clientSecret, grantTypes, scopes
+	
+5. 	Data service:
+	- In meory H2
+	- Uses spring data jpa repositories that gives crud repositories out of box.
+	- Secured by petstore security
+	- Has endpoints to read, write and delete pets.
+	- Bounds config, discovery and sso cups.
+	
+6. UI:
+	- Hosts angular app and Zuul reverse proxy and user endpoint.
+	- Secured By petstore security
+	- Used maven plugin to build UI.
+	- Bounds config, discovery and sso cups.
+	
+7. One click run and build scripts.
+
+8. Entire suite of apps is structured as multimodule project and maven reactor can build the app issuing mvn package command in petstore root.
+
+9. All the logs are in logs directory.	
+
+10. Blue/Green Deployment
+
+11. Material Design and Angular 4 [Has dialog, Snackbar and role based authorization]

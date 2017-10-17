@@ -951,3 +951,10 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2017-10-16 23:12:29.999  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 23:17:30.001  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 23:22:30.002  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:27:30.005  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:32:30.008  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:33:57.743  INFO 8764 --- [nio-8888-exec-3] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21e89403: startup date [Mon Oct 16 23:33:57 EDT 2017]; root of context hierarchy
+2017-10-16 23:33:57.751  INFO 8764 --- [nio-8888-exec-3] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-16 23:33:57.775  INFO 8764 --- [nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/C:/Users/Gaurav/AppData/Local/Temp/config-repo-3593207617896145398/user-interface.yml
+2017-10-16 23:33:57.775  INFO 8764 --- [nio-8888-exec-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@21e89403: startup date [Mon Oct 16 23:33:57 EDT 2017]; root of context hierarchy
+2017-10-16 23:37:30.010  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

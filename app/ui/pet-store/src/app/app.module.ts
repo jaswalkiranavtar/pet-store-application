@@ -15,9 +15,11 @@ import { BodyComponent } from './body/body.component';
 import {MatButtonModule} from '@angular/material';
 import {MatDialogModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material';
+import {MatSnackBarModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
+import {MatProgressSpinnerModule} from '@angular/material';
 import {NewPetExampleDialog} from './header/header.component';
 
 
@@ -38,8 +40,10 @@ import {NewPetExampleDialog} from './header/header.component';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatSnackBarModule,
     MatToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule
   ],
   entryComponents: [
     NewPetExampleDialog

@@ -1,4 +1,7 @@
-<div *ngIf="user">
+<div *ngIf="user; else spinner">
 	<app-header [user]="user"></app-header>
 	<app-body [user]="user" [pets]="pets"></app-body>
 </div>
+<ng-template #spinner>
+	<mat-spinner></mat-spinner>
+</ng-template>

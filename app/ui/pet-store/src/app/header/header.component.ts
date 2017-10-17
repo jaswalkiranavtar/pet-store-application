@@ -3,6 +3,7 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import {MAT_DIALOG_DATA} from '@angular/material';
 import { MatDialog } from '@angular/material';
 import { MatDialogRef } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 
 import {PetstoreService} from '../petstore.service';
 import { User } from '../user';
@@ -56,7 +57,7 @@ export class NewPetExampleDialog {
 
   constructor(
     public dialogRef: MatDialogRef<NewPetExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+    @Inject(MAT_DIALOG_DATA) public data: any, public snackBar: MatSnackBar) { }
 
   onCancelClick(): void {
     this.dialogRef.close();
@@ -65,6 +66,10 @@ export class NewPetExampleDialog {
   onCreateClick(): void {
     this.data.petstoreService.createPet({"name": this.data.name});
     this.dialogRef.close();
+    
+    this.snackBar.open(this.data.name, "Saved", {
+      duration: 2000,
+    });
   }
 
 }

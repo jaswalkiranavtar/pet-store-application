@@ -900,3 +900,54 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2017-10-16 19:11:07.469  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 19:16:07.470  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-10-16 19:21:07.472  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:26:07.474  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:31:07.475  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:36:07.477  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:41:07.478  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:46:07.481  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:51:07.483  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 19:56:07.484  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:01:07.486  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:06:07.487  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:11:07.488  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:16:07.490  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:21:07.492  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:26:07.494  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:31:07.495  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:36:07.496  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:41:07.497  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:46:07.500  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:51:07.501  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 20:56:07.503  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:01:07.504  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:12:29.885  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:17:29.888  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:22:29.889  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:27:29.892  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:32:29.908  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:37:29.909  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:42:29.910  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:47:29.911  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:52:29.913  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 21:57:29.914  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:02:29.916  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:07:29.917  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:08:56.993  INFO 8764 --- [nio-8888-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ac0dee1: startup date [Mon Oct 16 22:08:56 EDT 2017]; root of context hierarchy
+2017-10-16 22:08:57.042  INFO 8764 --- [nio-8888-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-16 22:08:57.094  INFO 8764 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/C:/Users/Gaurav/AppData/Local/Temp/config-repo-3593207617896145398/user-interface.yml
+2017-10-16 22:08:57.094  INFO 8764 --- [nio-8888-exec-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ac0dee1: startup date [Mon Oct 16 22:08:56 EDT 2017]; root of context hierarchy
+2017-10-16 22:12:29.955  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:17:29.958  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:22:29.959  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:27:29.961  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:32:29.962  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:37:29.963  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:42:29.964  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:47:29.992  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:52:29.993  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 22:57:29.995  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:02:29.996  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:07:29.997  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:12:29.999  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:17:30.001  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:22:30.002  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

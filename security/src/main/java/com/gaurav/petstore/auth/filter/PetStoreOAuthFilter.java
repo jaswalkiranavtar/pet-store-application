@@ -1,8 +1,11 @@
 package com.gaurav.petstore.auth.filter;
 
+import java.io.IOException;
 import java.util.Base64;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -65,7 +68,13 @@ public class PetStoreOAuthFilter  extends UsernamePasswordAuthenticationFilter
         	re = restTemplate.exchange(url, HttpMethod.POST, entity, Map.class);
         } catch (Exception e) {
 			log.info(e.getMessage());
-			throw e;
+			
+			try {
+				response.sendRedirect("/login?error");
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			return null;
 		}
 
         PetStoreAuthenticationToken token = new PetStoreAuthenticationToken(username, password);

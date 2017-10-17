@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .formLogin()
                 .loginPage("/login")
+                .failureUrl("/login?error")
                 .permitAll()
                 .and()
             .addFilterBefore(petStoreOAuthFilter(), AbstractPreAuthenticatedProcessingFilter.class)

@@ -958,3 +958,37 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2017-10-16 23:33:57.775  INFO 8764 --- [nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/C:/Users/Gaurav/AppData/Local/Temp/config-repo-3593207617896145398/user-interface.yml
 2017-10-16 23:33:57.775  INFO 8764 --- [nio-8888-exec-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@21e89403: startup date [Mon Oct 16 23:33:57 EDT 2017]; root of context hierarchy
 2017-10-16 23:37:30.010  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:42:30.014  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-16 23:47:30.016  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 08:47:37.988  INFO 8764 --- [nio-8888-exec-5] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1637cd81: startup date [Tue Oct 17 08:47:37 EDT 2017]; root of context hierarchy
+2017-10-17 08:47:37.998  INFO 8764 --- [nio-8888-exec-5] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-17 08:47:38.048  INFO 8764 --- [nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/C:/Users/Gaurav/AppData/Local/Temp/config-repo-3593207617896145398/data-service.yml
+2017-10-17 08:47:38.048  INFO 8764 --- [nio-8888-exec-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1637cd81: startup date [Tue Oct 17 08:47:37 EDT 2017]; root of context hierarchy
+2017-10-17 08:48:04.300  INFO 8764 --- [nio-8888-exec-7] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@134072e8: startup date [Tue Oct 17 08:48:04 EDT 2017]; root of context hierarchy
+2017-10-17 08:48:04.303  INFO 8764 --- [nio-8888-exec-7] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-17 08:48:04.341  INFO 8764 --- [nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/C:/Users/Gaurav/AppData/Local/Temp/config-repo-3593207617896145398/user-interface.yml
+2017-10-17 08:48:04.341  INFO 8764 --- [nio-8888-exec-7] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@134072e8: startup date [Tue Oct 17 08:48:04 EDT 2017]; root of context hierarchy
+2017-10-17 08:49:05.104  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 08:54:05.105  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 08:59:05.107  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:04:05.108  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:09:05.109  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:14:05.110  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:19:05.112  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:24:05.114  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:29:05.115  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:34:05.118  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:39:05.119  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:44:05.121  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:49:05.122  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:54:05.123  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 09:59:05.124  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:04:05.126  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:09:05.127  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:14:05.129  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:19:05.130  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:24:05.131  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:29:05.134  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:34:05.135  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 10:39:05.137  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-10-17 11:48:01.891  INFO 8764 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

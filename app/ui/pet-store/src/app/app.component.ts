@@ -12,9 +12,9 @@ import 'rxjs/add/observable/of';
 })
 export class AppComponent implements OnInit {
 
-  private user: User;
-  private pets: Observable<Pet[]>;
-  private searchString: string = "";
+  public user: User;
+  public pets: Observable<Pet[]>;
+  public searchString: string = "";
   
   constructor(private petstoreService: PetstoreService) { }
 

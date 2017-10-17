@@ -42,3 +42,5 @@
 10. Blue/Green Deployment
 
 11. Material Design and Angular 4 [Has dialog, Snackbar and role based authorization]
+
+12. API tests using rest assured.

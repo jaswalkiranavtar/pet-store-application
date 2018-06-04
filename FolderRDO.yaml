@@ -1,0 +1,12 @@
+FolderRDO:
+  type: object
+  required:
+    - name
+    - parentFolderId
+  properties:
+    name:
+      type: string
+      description: <p>The name of the folder.</p>
+    parentFolderId:
+      type: string
+      description: <p>The ID of the parent folder.</p>
